@@ -95,8 +95,6 @@
     virt-manager
     qemu
     qemu_kvm
-    qemu-utils
-    qtemu
     quickemu
     libvirt
 
@@ -123,14 +121,6 @@
     anki
     bitwarden-desktop
     
-    # VM:
-    qemu
-    qemu_kvm
-    qemu-utils
-    qtemu
-    quickemu
-    libvirt
-
     # Icons:
     fairywren
 
