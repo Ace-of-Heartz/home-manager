@@ -16,10 +16,13 @@
     nas
     
     # Office Tools:
-    libreoffice-still-unwrapped
+    libreoffice
 
     # Torrent / File Sharing:
     nicotine-plus
+    qbittorrent
+    onedrive
+    onedrivegui
 
     # Terminals & Shells:
     rio
@@ -28,6 +31,7 @@
 
     # File Management:
     krusader
+    wofi
 
     # Misc. Terminal Extensions:
     kittysay
@@ -54,11 +58,7 @@
     blender-hip
     blockbench
 
-    # Art Tools:
-    krita
-    aseprite
-    pureref
-
+    # Art Tools:emacs.nix
     # Graphics Tools:
     mandelbulber
     renderdoc
@@ -90,7 +90,6 @@
     # Note Taking:
     obsidian
 
-
     # Virtual Machines & Tools for Virtualization:
     virt-manager
     qemu
@@ -117,9 +116,12 @@
     findutils
     plocate
     diffutils
-    
+    direnv
+    nix-direnv
     anki
     bitwarden-desktop
+    
+
     
     # Icons:
     fairywren
@@ -131,15 +133,14 @@
     # IDEs # Editors:
     jetbrains-toolbox
 
-    emacs
-    emacsPackages.kurecolor
-    emacsPackages.rgb
+    nix-doom-emacs
     vscodium
     kdePackages.kate
       
     # Dev. Tools.:
     shellcheck
     riff
+    git
 
     # Fonts:
     nerdfonts
@@ -155,5 +156,6 @@
     epson-escpr2
     libinklevel
     foomatic-db
+
   ];
 }

@@ -8,6 +8,7 @@
 
   imports = [
     ./packages.nix
+    ./emacs.nix
   ];
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -19,6 +20,8 @@
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
   nixpkgs.config.allowUnfree = true;
+
+  
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
@@ -78,4 +81,7 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+
+  # wayland.windowManager.hyprland.enable = true;
 }
