@@ -133,7 +133,6 @@
     # IDEs # Editors:
     jetbrains-toolbox
 
-    nix-doom-emacs
     vscodium
     kdePackages.kate
       
