@@ -26,12 +26,13 @@
         # to pass through arguments to home.nix
       };
 
-      devShell.${system}.default = pkgs.mkShell {
+      devShells.${system}.default = pkgs.mkShell {
         packages = with pkgs; [
           nixd nil
           nixfmt-rfc-style
           nix-plugins
           statix
+      
         ];
       };
 

@@ -3,8 +3,11 @@
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
-  home.username = "ace";
-  home.homeDirectory = "/home/ace";
+
+  home = {
+    username = "ace";
+    homeDirectory = "/home/ace";
+  };
 
   imports = [
     ./packages.nix
