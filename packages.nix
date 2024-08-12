@@ -58,7 +58,10 @@
     blender-hip
     blockbench
 
-    # Art Tools:emacs.nix
+    # Art Tools:
+    aseprite
+    krita
+
     # Graphics Tools:
     mandelbulber
     renderdoc
@@ -79,6 +82,8 @@
     steam 
     #itch
 
+    
+
     # Wacom & Drawing Tablets:
     xf86_input_wacom
     libwacom
@@ -96,6 +101,8 @@
     qemu_kvm
     quickemu
     libvirt
+    
+    
 
     # Misc. Software:
     ripgrep
@@ -120,9 +127,7 @@
     nix-direnv
     anki
     bitwarden-desktop
-    
-
-    
+        
     # Icons:
     fairywren
 
@@ -140,6 +145,7 @@
     shellcheck
     riff
     git
+
 
     # Fonts:
     nerdfonts
