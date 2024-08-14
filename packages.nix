@@ -33,6 +33,9 @@
     krusader
     wofi
 
+    # Remote Desktop:
+    rustdesk
+
     # Misc. Terminal Extensions:
     kittysay
     kitty-img
@@ -59,8 +62,9 @@
     blockbench
 
     # Art Tools:
-    aseprite
+    aseprite-unfree
     krita
+
 
     # Graphics Tools:
     mandelbulber
@@ -80,6 +84,7 @@
     # Games & Launchers:
     prismlauncher
     steam 
+    gamemode
     #itch
 
     

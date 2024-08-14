@@ -1,0 +1,16 @@
+Dark Reader                 # theme dracula
+Midnight Lizard             # custom themes
+Decentraleyes               # tracking protection
+Privacy Badger              # tracking protection
+Save webP as PNG or JPEG    # convert webP images
+Shinigami Eyes              # transrights are human rights
+Sidebery                    # side tabs
+SponsorBlock for Youtube - Skip Sponsorships 
+uBlock Origin
+WCAG Color contrast checker # HTML accessibility checker 
+Return YouTube Dislike
+Indie Wiki Buddy
+Ghostery Tracker Ad Blocker - Privacy AdBlock
+Firefox Multi-Account Containers
+Dictionariez: Your Dictionary, Your Language
+Web Archives
