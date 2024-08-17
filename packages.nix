@@ -16,7 +16,7 @@
     nas
     
     # Office Tools:
-    libreoffice
+    libreoffice-qt
 
     # Torrent / File Sharing:
     nicotine-plus
