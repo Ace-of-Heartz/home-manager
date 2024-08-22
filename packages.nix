@@ -132,6 +132,10 @@
     nix-direnv
     anki
     bitwarden-desktop
+    xcolor
+    gnumake
+    cmake
+    gcc
         
     # Icons:
     fairywren

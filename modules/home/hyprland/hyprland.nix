@@ -1,4 +1,4 @@
-{ inputs, pkgs, ...}:
+{ config, pkgs, inputs, ...}:
 
 {
   home.packages = with pkgs; [
@@ -11,14 +11,14 @@
     glib
     wayland 
     direnv
-    hyprland
   ];
   systemd.user.targets.hyprland-session.Unit.Wants = [ "xdg-desktop-autostart.target" ];
   wayland.windowManager.hyprland = {
     enable = true;
+
     xwayland = {
       enable = true;
-      # hidpi = true;
+      #hidpi = true;
     };
     # enableNvidiaPatches = false;
     systemd.enable = true;

@@ -8,10 +8,17 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprland = {
+      url = "https://github.com/hyprwm/Hyprland";
+      type = "git";
+      submodules = true;
+    };
+    hypr-contrib.url = "github:hyprwm/contrib";
+    hyprpicker.url = "github:hyprwm/hyprpicker";
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
-    let
+  outputs = { nixpkgs, home-manager, ... } @ inputs :
+    let 
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in {
@@ -24,6 +31,7 @@
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
+        extraSpecialArgs = {inherit inputs;};
       };
 
       devShells.${system}.default = pkgs.mkShell {

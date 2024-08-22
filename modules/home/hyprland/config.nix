@@ -1,13 +1,24 @@
 { ... }: 
 {
-  wayland.windowManager.hyprLand = {
+  wayland.windowManager.hyprland = {
     settings = {
       exec-once = [
-
+        "systemctl --user import-environment &"
+        "hash dbus-update-activation-environment 2>/dev/null &"
+        "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &"
+        "nm-applet &"
+        "wl-clip-persist --clipboard both"
+        "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
+        "hyprctl setcursor Nordzy-cursors 22 &"
+        "poweralertd &"
+        "waybar &"
+        "swaync &"
+        "wl-paste --watch cliphist store &"
+        "hyprlock"      
       ];
 
       input = {
-        kb_layout = "hu,us";
+        kb_layout = "br,us";
         kb_options ="grp:alt_caps_toggle"; 
         numlock_by_default = true;
         follow_mouse = 1;
@@ -39,7 +50,7 @@
         focus_on_activate = true;
       };
 
-            dwindle = {
+      dwindle = {
         no_gaps_when_only = true;
         force_split = 0;
         special_scale_factor = 1.0;

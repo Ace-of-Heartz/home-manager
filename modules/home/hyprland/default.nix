@@ -5,5 +5,6 @@
   ++ [ (import ./config.nix) ]
   ++ [ (import ./hyprlock.nix) ]
   ++ [ (import ./variables.nix) ]
-  ++ [ inputs.hyprland.homeManagerModules.default ];
+  ++ [ inputs.hyprland.homeManagerModules.default ]
+  ;
 }
