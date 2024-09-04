@@ -1,4 +1,4 @@
-{config, pkgs, ...}:
+{pkgs, ...}:
 
 {
   home.packages = with pkgs; [
@@ -64,13 +64,16 @@
     # Art Tools:
     aseprite-unfree
     krita
-
+    
 
     # Graphics Tools:
     mandelbulber
     renderdoc
     clinfo
     lact
+    glxinfo
+    pciutils
+    fwupd
 
     # Media Players:
     spotify 
@@ -85,9 +88,8 @@
     prismlauncher
     steam 
     gamemode
-    #itch
-
-    
+    lutris
+    # itch
 
     # Wacom & Drawing Tablets:
     xf86_input_wacom
@@ -99,6 +101,7 @@
 
     # Note Taking:
     obsidian
+    xournalpp
 
     # Virtual Machines & Tools for Virtualization:
     virt-manager
@@ -107,8 +110,6 @@
     quickemu
     libvirt
     
-    
-
     # Misc. Software:
     ripgrep
     fd
@@ -130,12 +131,18 @@
     diffutils
     direnv
     nix-direnv
-    anki
+    anki-bin
+    mpv
     bitwarden-desktop
     xcolor
-    gnumake
-    cmake
-    gcc
+    easyeffects
+    caligula
+
+    # Scientific Stuff:
+    panoply
+    qgis
+    
+
         
     # Icons:
     fairywren
@@ -153,7 +160,6 @@
     # Dev. Tools.:
     shellcheck
     riff
-    git
 
 
     # Fonts:

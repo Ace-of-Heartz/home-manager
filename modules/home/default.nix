@@ -1,6 +1,7 @@
 {inputs, username, host, ...}: {
-  imports = 
-  [(import ./aseprite/aseprite.nix)]
+  imports =
+  [(import ./x11.nix)] 
+  ++ [(import ./aseprite/aseprite.nix)]
   ++ [(import ./vscodium.nix)]
   ++ [(import ./floorp/floorp.nix)]
   ++ [(import ./git.nix)]

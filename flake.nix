@@ -1,20 +1,26 @@
 {
-  description = "Home Manager configuration of ace";
+  description = "Home Manager configuration of Ace";
 
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
     home-manager = {
-      url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland = {
-      url = "https://github.com/hyprwm/Hyprland";
-      type = "git";
-      submodules = true;
-    };
-    hypr-contrib.url = "github:hyprwm/contrib";
-    hyprpicker.url = "github:hyprwm/hyprpicker";
+    # hyprland = {
+    #   type = "git";
+    #   url = "https://github.com/hyprwm/Hyprland";
+    #   submodules = true;
+    # };
+    # hypr-contrib = {
+    #   url = "github:hyprwm/contrib";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # hyprpicker = {
+    #   url = "github:hyprwm/hyprpicker";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = { nixpkgs, home-manager, ... } @ inputs :
